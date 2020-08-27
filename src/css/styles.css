@@ -1,0 +1,12 @@
+body {
+	background-color: #c2f2ff;
+}
+
+#welcome-section {
+	height: 100vh;
+}
+
+#welcome-section .welcome-section-content {
+	border: 5px solid white;
+	margin-top: 100px;
+}
