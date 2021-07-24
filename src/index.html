@@ -7,40 +7,40 @@
 	<meta name="keywords" content="portofolio, HTML, CSS, Bootstrap">
 	<meta name="author" content="Lluís Aracil Sabater <Luxus Zigard>">
 
-		<!-- Bootstrap css -->
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<!-- Bootstrap css -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
-		<!-- Fontawesome script -->
-		<script src="https://kit.fontawesome.com/1f4717d54d.js" crossorigin="anonymous"></script>
+	<!-- Fontawesome script -->
+	<script src="https://kit.fontawesome.com/1f4717d54d.js" crossorigin="anonymous"></script>
 
-		<!-- Custom CSS -->
-		<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<!-- Custom CSS -->
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
 
-		<title>Personal Portofolio</title>
+	<title>Personal Portofolio</title>
 	</head>
 	<body>
 		<header>
-			<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="navbar">
 				<a class="navbar-brand" href="#">Lluís Aracil Sabater</a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 					<div class="navbar-nav">
-						<a class="nav-item nav-link active" href="#">About</a>
-						<a class="nav-item nav-link active" href="#">Projects</a>
-						<a class="nav-item nav-link active" href="#">Contact</a>
+						<a class="nav-item nav-link active" href="#welcome-section">About</a>
+						<a class="nav-item nav-link active" href="#projects">Projects</a>
+						<a class="nav-item nav-link active" href="#contact">Contact</a>
 					</div>
 				</div>
 			</nav>
 		</header>
 		<main>
 			<section id="welcome-section">
-				<div class="container welcome-section-content text-center">
+				<div class="container section_content welcome-section-content">
 					<h1>Welcome, I'm Lluís Aracil Sabater</h1>
 					<h2>I am a web developer and I work every day to learn new technologies and to perfect the ones I know.</h2>
 					<hr>
-					<h3>These are some of my knowledge:</h3>
+					<h3">These are some of my knowledge:</h3>
 					<div class="row knowledge-section">
 						<div class="col knowledge-content">
 							<h4>Front-end</h4>
@@ -69,13 +69,32 @@
 				</div>
 			</section>
 			<section id="projects">
-				<div class="container projects-content">
-					
+				<div class="container section_content projects-content">
+					<h3">These are some of my projects</h3>
+					<div class="row">
+						<div class="col-sm-3 project-tile">
+							<a>Proyecto 1</a>
+						</div>
+						<div class="col-sm-3 project-tile">
+							<a>Proyecto 2</a>
+						</div>
+						<div class="col-sm-3 project-tile">
+							<a>Proyecto 3</a>
+						</div>
+					</div>
 				</div>
 			</section>
 			<section id="contact">
-				<div class="container contact-content">
-					
+				<div class="container section_content contact-content">
+					<h3>Let's work together...</h3>
+					<sub>How do you take your coffee?</sub>
+					<div class="row text-center">
+						<div class="col">
+							<a id="profile-link" class="btn contact-details" href="https://github.com/LAS1819" target="_blank">
+								<i class="fab fa-github"></i>GitHub
+							</a>	
+						</div>
+					</div>		
 				</div>
 			</section>
 		</main>
